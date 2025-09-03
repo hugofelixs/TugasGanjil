@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap");
+@import url("https://db.onlinewebfonts.com/c/6faad1789bcbd321a458c14d0735d976?family=Alagard");
+@import url("https://db.onlinewebfonts.com/c/20848655287e138ef4b905cda10b3858?family=Fairfax");
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Fonts untuk logo Team NewJeans */
+.font-team {
+  font-family: "Times New Roman", Georgia, serif;
+  font-weight: bold;
+}
+
+.font-newjeans {
+  font-family: "Bodoni Moda", "Didot", "Bodoni MT", serif;
+  font-weight: 400;
+}
+
+.font-newjeans2 {
+  font-family: "Bodoni Moda", "Didot", "Bodoni MT", serif;
+  font-weight: 800;
+}
+
+/* Font Alagard */
+.font-alagard {
+  font-family: "Alagard", serif;
+  font-weight: normal;
+}
+
+.font-fairfax {
+  font-family: "Fairfax", monospace;
+}
+
+/* tambahkan di globals.css atau file css kamu */
+.text-stroke {
+  -webkit-text-stroke: 1px black; /* outline tebal 2px warna hitam */
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
